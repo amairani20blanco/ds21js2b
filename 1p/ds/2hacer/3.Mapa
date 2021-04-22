@@ -1,0 +1,14 @@
+<script>
+ function Num_ale()
+{ 
+let y=Math.random();
+return String.fromCharCode(Math.floor (65+(Math.random()*25)));
+}
+  const map = new Map();
+  
+for(i=0;i<5;i++)
+map.set(i,Num_ale());
+  
+  for (let elements of map)   
+ document.writeln("Nombre "+ elements + "<br>");   
+</script> 
