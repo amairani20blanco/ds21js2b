@@ -1,0 +1,15 @@
+<script>
+let c=prompt("Ingrese el limite");
+let x=[];  
+for(i=2;i<=c;i++)
+	x[i]=true;
+for(i=2;i<=c;i++){
+for(d=2;d<=c;d++)
+	x[i*d]=false;	  
+}
+
+for(i=2;i<=c;i++){
+  if(x[i]==true)
+  document.write(i+"<br>");  
+}
+</script> 
