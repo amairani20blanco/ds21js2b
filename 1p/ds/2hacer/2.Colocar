@@ -1,0 +1,18 @@
+<script>
+ function Num_ale()
+{ 
+let y=Math.random();
+return String.fromCharCode(Math.floor (65+(Math.random()*25)));
+}
+
+  let c=[];
+  var mySet=new Set([]);
+  
+for(i=0;i<5;i++)
+mySet.add(Num_ale());
+  
+  for (let elements of mySet)   
+ document.writeln("Nombre "+elements+"<br>");  
+  
+  
+</script> 
