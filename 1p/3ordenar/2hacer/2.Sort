@@ -1,0 +1,14 @@
+function Num_ale()
+{ 
+let y=Math.random()*40;
+return Math.floor (1+y);
+}
+let a=[];
+for(i=0;i<6;i++)
+{
+  let c=Num_ale();
+  a[i]=c;
+}
+document.write(a+"<br>");  
+
+document.write(a.sort((a,b)=>a-b)); 
