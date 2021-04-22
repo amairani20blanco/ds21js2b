@@ -60,9 +60,49 @@ document.write(a.sort((a,b)=>a-b));
 // -> o an object containing random names: either an array of objects or an object of objects
 // <- the random names sorted
 // verify is sorted
+<script>
+function Num_ale()
+{ 
+let y=Math.random();
+return String.fromCharCode(Math.floor (65+(Math.random()*25)));
+}
 
+   let c=[];
+for(i=0;i<5;i++){
+  c[i]=Num_ale()+Num_ale()+Num_ale();
+} 
+for (k = 1; k < c.length; k++) 
+{
+	for (i = 0; i < c.length - k; i++) 
+  {
+  	if (c[i] > c[i + 1]) 
+    {
+    	aux = c[i];
+      c[i] = c[i + 1];
+      c[i + 1] = aux;
+    }
+  }
+}
+for(i=0;i<5;i++)
+</script>
 //4. sort - use JS Array.sort implementation
 //   sort(o)
 // -> o an object containing random names
 // <- the random names sorted
 // verify is sorted
+<script>
+function Num_ale()
+{ 
+let y=Math.random()*40;
+return Math.floor (1+y);
+}
+
+   let c=[];
+for(i=0;i<5;i++){
+  let x=Num_ale();
+  c[i]=x;
+} 
+c.sort((a, b)=>a-b);
+for(i=0;i<5;i++)
+  document.write("Nombre "+c[i]+"<br>");
+</script>
