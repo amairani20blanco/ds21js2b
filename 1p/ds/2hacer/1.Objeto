@@ -1,0 +1,13 @@
+<script>
+ function Num_ale()
+{ 
+let y=Math.random();
+return String.fromCharCode(Math.floor (65+(Math.random()*25)));
+}
+
+  let c=[]; 
+  const fn = (k) => c.push(k);
+for(i=0;i<5;i++){
+fn(Num_ale());
+  document.write("Nombre "+c[i]+"<br>");}
+</script>
