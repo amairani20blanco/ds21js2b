@@ -1,0 +1,28 @@
+<script>
+function Num_ale()
+{ 
+let y=Math.random();
+return String.fromCharCode(Math.floor (65+(Math.random()*25)));
+}
+
+   let c=[];
+for(i=0;i<5;i++){
+  c[i]=Num_ale()+Num_ale()+Num_ale();
+} 
+for (k = 1; k < c.length; k++) 
+{
+	for (i = 0; i < c.length - k; i++) 
+  {
+  	if (c[i] > c[i + 1]) 
+    {
+    	aux = c[i];
+      c[i] = c[i + 1];
+      c[i + 1] = aux;
+    }
+  }
+}
+for(i=0;i<5;i++)
+  document.write("Nombre "+c[i]+"<br>");
+  
+  
+</script>
