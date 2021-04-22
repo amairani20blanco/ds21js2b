@@ -1,0 +1,12 @@
+<script>
+
+function Num_ale()
+{ 
+let y=Math.random()*20;
+return Math.floor (1+y);
+}
+let a=Num_ale();
+
+document.write("Numero aleatorio " + a );
+ 
+</script>
