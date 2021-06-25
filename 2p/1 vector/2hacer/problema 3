@@ -1,0 +1,5 @@
+let v = prompt ("ingrese el valor que desea colocar");
+let a=[ 0, 3, 4, 5, 6, 7, 8, 9]
+console.log(a);
+a.unshift(v);
+console.log(a);
