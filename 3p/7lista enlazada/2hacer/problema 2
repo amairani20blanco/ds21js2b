@@ -29,4 +29,3 @@ add.insertar(4);
   
 console.log(add);
 console.log(add.size());
-</script>
