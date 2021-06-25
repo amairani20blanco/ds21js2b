@@ -1,0 +1,9 @@
+let centena =100;
+let binario= centena.toString(2);
+let milesimal = centena.toString(1000);
+let octal = centena.toString(8);
+  
+console.log(centena);
+console.log(binario);
+console.log(milesimal);
+console.log(octal);
