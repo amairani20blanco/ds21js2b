@@ -1,23 +1,23 @@
-class Stack {
+class Stack{
       constructor(){
-         this.con={};
-        this.final=0;
-           }
+         this.items={};
+        this.top=0;
+           };
 
-             push(data);{
-             this.final++;
-             this.con [this.final ]=data;
-            }
-             pop();{
-          let deletedData;
-if(this.final) {
-deletedData = this.con[this.top];
-delete this.con[this.final];
-this.final--;
+             push(data){
+             this.top++;
+             this.items[this.top ]=data;
+            };
+             pop() {
+                  let deletedData;
+if(this.top) {
+deletedData = this.items[this.top];
+delete this.items[this.top];
+this.top--;
 return deleteData;
-                       }              
-            }
-
+                       };              
+            };
+};
 
 const stack= new Stack();
 stack.push('1');
@@ -25,5 +25,5 @@ stack.push('2');
 stack.push('3');
 stack.push('4');
 stack.push('5');
-console.log(stack.pop);
+console.log(stack.top);
 console.log(stack);
