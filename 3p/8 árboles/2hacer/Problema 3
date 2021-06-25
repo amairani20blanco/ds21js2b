@@ -53,7 +53,5 @@ tree_i.insert(16);
 tree_i.insert(39);
 tree_i.insert(3);
 tree_i.insert(77);
-let n=prompt("Ingresa un número: ");  
-tree_i.insert(n);
-console.log("Postorder traversal: ");
+console.log("Postorder");
 postOrder(tree_i.root);
