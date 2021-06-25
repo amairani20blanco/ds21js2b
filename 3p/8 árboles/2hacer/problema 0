@@ -1,1 +1,59 @@
-
+función Nodo (datos, izquierda, derecha) {
+this.data = datos;
+this.left = left;
+this.right = correcto;
+this.show = mostrar;
+}
+function show () {
+devolver this.data;
+}
+función BST () {
+this.root = null;
+this.insert = insertar;
+this.preOrder = preOrder;
+}
+función insertar (datos) {
+var n = nuevo nodo (datos, nulo, nulo);
+if (this.root == null) {
+this.root = n;
+}
+demás {
+var current = this.root;
+var parent;
+while (verdadero) {
+padre = actual;
+if (data <current.data) {
+current = current.left;
+si (actual == nulo) {
+parent.left = n;
+rotura;
+}
+}
+demás {
+current = current.right;
+si (actual == nulo) {
+padre.derecho = n;
+rotura;
+}
+}
+}
+}
+}
+function preOrder (nodo) {
+si (! (nodo == nulo)) {
+console.log (node.show () + "");
+preOrder (node.left);
+preOrder (node.right);
+}
+}
+var tree_i = new BST ();
+tree_i.insert (30);
+tree_i.insert (20);
+tree_i.insert (110);
+tree_i.insert (10);
+tree_i.insert (46);
+tree_i.insert (78);
+let n = prompt ("Ingresa un número:");  
+tree_i.insert (n);
+console.log ("Preorder recorrido:");
+preOrder (tree_i.root);
