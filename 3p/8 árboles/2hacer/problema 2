@@ -54,7 +54,5 @@ tree_i.insert(10);
 tree_i.insert(39);
 tree_i.insert(3);
 tree_i.insert(66);
-let n=prompt("Ingresa un número: ");  
-tree_i.insert(n);
-console.log("Inorder traversal: ");
+console.log("Inorder");
 inOrder(tree_i.root);
