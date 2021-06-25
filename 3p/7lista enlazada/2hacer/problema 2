@@ -1,1 +1,32 @@
+class  Add{
+	constructor(){
+    	this.b={};
+      	this.inicio=0;
+      	this.final=0;
+    
+    };
+  	insertar(dato){
+    		this.b[this.final]= dato;
+      	this.final++;
+    };
+  
+  	size() {
+    		return this.final - this.inicio;
+    
+    };
 
+};
+  
+const add= new Add();
+add.insertar("H");
+add.insertar("O");
+add.insertar("L");
+add.insertar("A");
+add.insertar(1);
+add.insertar(2);
+add.insertar(3);
+add.insertar(4);
+  
+console.log(add);
+console.log(add.size());
+</script>
